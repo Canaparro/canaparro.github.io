@@ -1,0 +1,30 @@
+
+
+# MD5 tests
+
+These are tests that guarantee you that the code has not changed, yet you are not quite sure what you are testing.
+
+# Brittle
+These types of tests seem to break at the slightest change to the code base. Tests should facilitate change not the other way around.
+
+# Asserts
+Having them thrown all around a test, just makes me think whoever wrote that test is not sure things are going to work, at all. That includes asserting that the starting condition for the test scenario is correct.
+
+
+# Black magic
+Having to rely on tools that make use of reflection and other dark arts to get around logical barriers is a sign that the code is not that well written.
+
+# Unit testing
+I believe that the definition of unit got lost at some point. Nowadays, people tend to think of unit as the smallest bit of code that one can test. That usualy tends to be a single method of a class, I swear I've seen people using black magic to mock private methods of the same class just to keep the unit small, but I digress. In unit testing we test if a module behaves as we expect it to, and here a module can be a single class or a group of classes that work together.
+
+# Mother objects
+
+# TDD
+Constant positive reinforcement.
+If your mom taught you well of if you joined the army your first task of the day will be to make your bed. Although arguably for different reasons, both your mom and the army taught you how good it feels to acomplish something. And that makes your brain release a bit of dopamine. And since dopamine improves attention, memory, and motivation, even achieving a small goal can result in a positive feedback loop that makes you more motivated to work harder going forward.
+
+You naturally go from simple cases to complicated ones
+
+# Integration testing
+Well, it is a necessary pain. Although it can be aliviated by unit testing.
+But why is it painful? Because it is slow, we are no longer doing things in memory but instead doing IO things, which are in general much slower.
